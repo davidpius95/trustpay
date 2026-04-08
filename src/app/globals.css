@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary-900: #032B44;
+  --color-primary-800: #053D62;
+  --color-primary-700: #076B8F;
+  --color-primary-600: #0990B8;
+  --color-primary-500: #0BB5E0;
+  --color-primary-400: #3DD0F5;
+  --color-primary-300: #7AE2FA;
+  --color-primary-200: #B8EFFD;
+  --color-primary-100: #E0F8FF;
+  --color-primary-50: #F0FCFF;
+
+  --color-accent-green: #00C9A7;
+  --color-accent-green-dark: #00A88C;
+  --color-accent-gold: #F5A623;
+
+  --color-neutral-900: #1A2530;
+  --color-neutral-800: #2A3A48;
+  --color-neutral-700: #3A4A56;
+  --color-neutral-600: #556270;
+  --color-neutral-500: #718096;
+  --color-neutral-400: #A0AEC0;
+  --color-neutral-300: #CBD5E0;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-100: #EEF2F5;
+  --color-neutral-50: #F8FAFB;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+  --animate-spin-slow: spin 12s linear infinite;
+  --animate-spin-reverse: spin-reverse 8s linear infinite;
+  --animate-dash: dash 3s ease-in-out infinite;
+  --animate-bounce-gentle: bounce-gentle 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes dash {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F8FAFB;
+  color: #1A2530;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #0BB5E0;
+  color: white;
+}
