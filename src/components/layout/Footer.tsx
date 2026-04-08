@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 
@@ -22,23 +23,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
-                <path
-                  d="M18 3L30 9V18C30 25.5 24.6 31.5 18 33C11.4 31.5 6 25.5 6 18V9L18 3Z"
-                  fill="#00C9A7"
-                  opacity="0.9"
-                />
-                <path
-                  d="M13 17L16 20.5L23 14"
-                  stroke="white"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                />
-              </svg>
-              <span className="text-xl font-bold">{SITE_CONFIG.name}</span>
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="TrustPay"
+                width={140}
+                height={35}
+                className="h-9 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-primary-300 text-sm leading-relaxed mb-6">
               {SITE_CONFIG.tagline}

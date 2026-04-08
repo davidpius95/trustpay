@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@/lib/constants";
 import Container from "@/components/ui/Container";
@@ -38,41 +39,17 @@ export default function Header() {
         <Container>
           <nav className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative">
-                <svg
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  fill="none"
-                  className="transition-transform duration-300 group-hover:scale-110"
-                >
-                  <path
-                    d="M18 3L30 9V18C30 25.5 24.6 31.5 18 33C11.4 31.5 6 25.5 6 18V9L18 3Z"
-                    className={`transition-colors duration-300 ${
-                      scrolled ? "fill-primary-600" : "fill-white"
-                    }`}
-                    opacity="0.9"
-                  />
-                  <path
-                    d="M13 17L16 20.5L23 14"
-                    className={`transition-colors duration-300 ${
-                      scrolled ? "stroke-white" : "stroke-primary-900"
-                    }`}
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-              <span
-                className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
-                  scrolled ? "text-neutral-900" : "text-white"
+            <Link href="/" className="flex items-center group">
+              <Image
+                src="/logo.png"
+                alt="TrustPay"
+                width={200}
+                height={60}
+                className={`h-10 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${
+                  scrolled ? "" : "brightness-0 invert"
                 }`}
-              >
-                TrustPay
-              </span>
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}
