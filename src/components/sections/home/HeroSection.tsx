@@ -83,7 +83,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="hidden lg:block"
+            className="hidden md:block"
           >
             <HeroSVG />
           </motion.div>
