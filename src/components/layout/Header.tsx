@@ -42,7 +42,7 @@ export default function Header() {
             <Link href="/" className="flex items-center group">
               <Image
                 src="/logo.png"
-                alt="TrustPay"
+                alt="ATrustPay"
                 width={200}
                 height={60}
                 className={`h-10 w-auto object-contain transition-all duration-300 group-hover:scale-105 ${

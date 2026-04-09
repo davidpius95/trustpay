@@ -32,7 +32,7 @@ export default function AboutPage() {
           >
             About{" "}
             <span className="bg-gradient-to-r from-accent-green to-primary-300 bg-clip-text text-transparent">
-              TrustPay
+              ATrustPay
             </span>
           </motion.h1>
           <motion.p
@@ -115,7 +115,7 @@ export default function AboutPage() {
                 {SITE_CONFIG.founderTitle}
               </p>
               <p className="text-neutral-600 leading-relaxed max-w-xl mx-auto">
-                TrustPay is led by {SITE_CONFIG.founder}, with the vision of building one of Africa&apos;s most trusted financial infrastructure platforms. Under his leadership, TrustPay is pioneering trust-enabled payment systems designed for the unique demands of African commerce.
+                ATrustPay is led by {SITE_CONFIG.founder}, with the vision of building one of Africa&apos;s most trusted financial infrastructure platforms. Under his leadership, ATrustPay is pioneering trust-enabled payment systems designed for the unique demands of African commerce.
               </p>
             </motion.div>
           </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
           <SectionHeading
             badge="Our Values"
             title="What drives us"
-            subtitle="The principles that guide every decision at TrustPay."
+            subtitle="The principles that guide every decision at ATrustPay."
           />
 
           <motion.div

@@ -18,11 +18,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "TrustPay — Trusted Payment Infrastructure for Africa and Beyond",
-    template: "%s | TrustPay",
+    default: "ATrustPay — Trusted Payment Infrastructure for Africa and Beyond",
+    template: "%s | ATrustPay",
   },
   description:
-    "TrustPay is building a new generation of financial infrastructure designed for African businesses, cross-border commerce, and trust-enabled transactions.",
+    "ATrustPay is building a new generation of financial infrastructure designed for African businesses, cross-border commerce, and trust-enabled transactions.",
 };
 
 export default function RootLayout({

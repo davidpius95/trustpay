@@ -47,7 +47,7 @@ const pillars = [
   },
 ];
 
-export default function WhyTrustPaySection() {
+export default function WhyATrustPaySection() {
   return (
     <section className="relative py-24 lg:py-32 bg-primary-900 overflow-hidden">
       <GradientOrb className="-top-32 -right-32" color="bg-primary-600" size="w-96 h-96" />
@@ -55,9 +55,9 @@ export default function WhyTrustPaySection() {
 
       <Container className="relative z-10">
         <SectionHeading
-          badge="Why TrustPay"
+          badge="Why ATrustPay"
           title="Because commerce needs more than payments. It needs trust."
-          subtitle="TrustPay combines payment acceptance, escrow security, compliance intelligence, and settlement efficiency into one modern financial infrastructure platform."
+          subtitle="ATrustPay combines payment acceptance, escrow security, compliance intelligence, and settlement efficiency into one modern financial infrastructure platform."
           light
         />
 

@@ -26,7 +26,7 @@ export default function WhatWeDoSection() {
         <SectionHeading
           badge="What We Do"
           title="A payment infrastructure built for trust, speed, and interoperability"
-          subtitle="TrustPay helps businesses and platforms operate with confidence across Africa and beyond."
+          subtitle="ATrustPay helps businesses and platforms operate with confidence across Africa and beyond."
         />
 
         <motion.div

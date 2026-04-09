@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="mb-4">
               <Image
                 src="/logo.png"
-                alt="TrustPay"
+                alt="ATrustPay"
                 width={140}
                 height={35}
                 className="h-9 w-auto object-contain brightness-0 invert"

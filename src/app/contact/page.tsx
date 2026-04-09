@@ -54,7 +54,7 @@ export default function ContactPage() {
           >
             Contact{" "}
             <span className="bg-gradient-to-r from-accent-green to-primary-300 bg-clip-text text-transparent">
-              TrustPay
+              ATrustPay
             </span>
           </motion.h1>
           <motion.p
@@ -250,10 +250,10 @@ export default function ContactPage() {
 
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-primary-900 to-primary-800 text-white">
                   <h3 className="text-lg font-semibold mb-3">
-                    Ready to build with TrustPay?
+                    Ready to build with ATrustPay?
                   </h3>
                   <p className="text-primary-200 text-sm leading-relaxed mb-6">
-                    Whether you&apos;re a merchant, platform, bank, or investor — we&apos;d love to explore how TrustPay can support your goals.
+                    Whether you&apos;re a merchant, platform, bank, or investor — we&apos;d love to explore how ATrustPay can support your goals.
                   </p>
                   <div className="flex gap-3">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer">

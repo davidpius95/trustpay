@@ -58,7 +58,7 @@ export default function HeroSection() {
               className="mt-6 text-lg leading-relaxed text-primary-200 max-w-xl"
             >
               Accept payments. Secure transactions. Move money with confidence.
-              TrustPay is building a new generation of financial infrastructure
+              ATrustPay is building a new generation of financial infrastructure
               designed for African businesses, cross-border commerce, and
               trust-enabled transactions.
             </motion.p>

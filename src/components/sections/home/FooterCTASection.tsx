@@ -34,7 +34,7 @@ export default function FooterCTASection() {
             Transact with trust.
           </h2>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">
-            TrustPay — Trusted Payment Infrastructure for Africa and Beyond
+            ATrustPay — Trusted Payment Infrastructure for Africa and Beyond
           </p>
           <div className="mt-10">
             <Button

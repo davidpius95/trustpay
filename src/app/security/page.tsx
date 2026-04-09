@@ -55,7 +55,7 @@ export default function SecurityPage() {
             transition={{ delay: 0.2 }}
             className="mt-6 text-lg text-primary-200 max-w-2xl mx-auto"
           >
-            TrustPay is designed with security, compliance, and transaction integrity at its core.
+            ATrustPay is designed with security, compliance, and transaction integrity at its core.
           </motion.p>
         </Container>
       </section>
