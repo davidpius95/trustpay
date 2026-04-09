@@ -13,10 +13,11 @@ export default function HeroSection() {
       <GradientOrb className="top-20 -left-48" color="bg-primary-500" size="w-96 h-96" />
       <GradientOrb className="bottom-20 -right-32" color="bg-accent-green" size="w-80 h-80" delay={2} />
       <GradientOrb className="top-1/2 left-1/3" color="bg-primary-400" size="w-64 h-64" delay={4} />
+      <GradientOrb className="top-10 right-1/4" color="bg-accent-gold" size="w-48 h-48" delay={3} />
 
       {/* Dot pattern overlay */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage:
             "radial-gradient(circle, white 1px, transparent 1px)",
@@ -24,16 +25,20 @@ export default function HeroSection() {
         }}
       />
 
-      <Container className="relative z-10 pt-32 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Text */}
-          <div>
+      {/* Extra ambient glow behind the hero SVG */}
+      <div className="hidden lg:block absolute top-1/2 right-0 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-accent-green/[0.04] blur-3xl pointer-events-none" />
+      <div className="hidden lg:block absolute top-1/3 right-[10%] w-[400px] h-[400px] rounded-full bg-primary-500/[0.06] blur-2xl pointer-events-none" />
+
+      <Container className="relative z-10 pt-32 pb-20 lg:pt-36 lg:pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
+          {/* Left: Text — takes 5 cols */}
+          <div className="lg:col-span-5">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <span className="inline-block mb-6 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-xs font-semibold uppercase tracking-widest text-accent-green border border-white/10">
+              <span className="inline-block mb-6 rounded-full bg-white/10 backdrop-blur-sm px-5 py-2.5 text-xs font-bold uppercase tracking-[0.2em] text-accent-green border border-accent-green/20 shadow-lg shadow-accent-green/5">
                 Financial Infrastructure
               </span>
             </motion.div>
@@ -42,10 +47,10 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white"
+              className="text-5xl sm:text-6xl lg:text-[3.5rem] xl:text-6xl font-extrabold leading-[1.08] tracking-tight text-white drop-shadow-lg"
             >
               Trusted Payment{" "}
-              <span className="bg-gradient-to-r from-accent-green to-primary-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent-green via-primary-300 to-accent-green bg-clip-text text-transparent drop-shadow-none">
                 Infrastructure
               </span>{" "}
               for Africa and Beyond
@@ -55,7 +60,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="mt-6 text-lg leading-relaxed text-primary-200 max-w-xl"
+              className="mt-7 text-lg lg:text-xl leading-relaxed text-primary-100/80 max-w-xl font-medium"
             >
               Accept payments. Secure transactions. Move money with confidence.
               ATrustPay is building a new generation of financial infrastructure
@@ -78,12 +83,12 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right: SVG Animation */}
+          {/* Right: SVG Animation — takes 7 cols for larger display */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="hidden md:block"
+            className="hidden md:block lg:col-span-7"
           >
             <HeroSVG />
           </motion.div>

@@ -115,8 +115,8 @@ export const VALUES = [
 export const SITE_CONFIG = {
   name: "ATrustPay",
   tagline: "Trusted Payment Infrastructure for Africa and Beyond",
-  email: "info@trustpay.net",
-  website: "www.trustpay.net",
+  email: "info@atrustpay.net",
+  website: "www.atrustpay.net",
   founder: "Check HAMODI",
   founderTitle: "Founder & CEO",
 };
